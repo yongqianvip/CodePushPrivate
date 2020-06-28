@@ -1,4 +1,5 @@
 platform :ios, '9.0'
+source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
 def add_flipper_pods!(versions = {})
@@ -76,7 +77,8 @@ target 'CodePushPrivate' do
   pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
-
+  pod 'CodePushPrivate', :path => '../'
+  
   target 'CodePushPrivateTests' do
     inherit! :complete
     # Pods for testing
@@ -91,14 +93,5 @@ target 'CodePushPrivate' do
   add_flipper_pods!
   post_install do |installer|
     flipper_post_install(installer)
-  end
-end
-
-target 'CodePushPrivate-tvOS' do
-  # Pods for CodePushPrivate-tvOS
-
-  target 'CodePushPrivate-tvOSTests' do
-    inherit! :search_paths
-    # Pods for testing
   end
 end

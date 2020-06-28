@@ -6,6 +6,7 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
+    "bundle-ios": "react-native bundle --entry-file index.js --bundle-output ./ios/CodePushPrivate/main.jsbundle --platform ios --assets-dest ./ios/CodePushPrivate --dev false",
     "test": "jest",
     "lint": "eslint ."
   },
@@ -19,8 +20,10 @@
     "@react-native-community/eslint-config": "^0.0.5",
     "babel-jest": "^24.9.0",
     "eslint": "^6.5.1",
+    "express": "^4.17.1",
     "jest": "^24.9.0",
     "metro-react-native-babel-preset": "^0.58.0",
+    "nodemon": "^2.0.4",
     "react-test-renderer": "16.11.0"
   },
   "jest": {

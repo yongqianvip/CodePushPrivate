@@ -1,0 +1,18 @@
+{
+	"code": 0,
+	"msg": "ok",
+  "data": {
+    "patches": [
+      {
+        "version": "117",
+        "src": "https://upload-file-1300460192.cos.ap-beijing.myqcloud.com/package/tmp/ray.zip",
+        "md5": "89622930c5ce01c19d0d33365811b487"
+      },
+      {
+        "version": "118",
+        "src": "https://upload-file-1300460192.cos.ap-beijing.myqcloud.com/package/tmp/cp.zip",
+        "md5": "86f0ef14110a02734c91e2d3334810d0"
+      }
+    ]
+  }
+}
